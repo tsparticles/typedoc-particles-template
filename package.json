@@ -6,7 +6,13 @@
   "repository": "https://github.com/tsparticles/typedoc-particles-template.git",
   "author": "Matteo Bruni <ar3s@icloud.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "copyfiles -f ./node_modules/tsparticles/dist/tsparticles.min.js ./assets/js/"
+  },
   "dependencies": {
     "tsparticles": "^1.17.10"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.3.0"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "name": "typedoc-particles-template",
+  "version": "1.0.0",
+  "description": "TypeDoc template with tsParticles as animated background",
+  "main": "index.js",
+  "repository": "https://github.com/tsparticles/typedoc-particles-template.git",
+  "author": "Matteo Bruni <ar3s@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tsparticles": "^1.17.10"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "typedoc-particles-theme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "TypeDoc theme with tsParticles as animated background",
   "main": "index.js",
   "files": [

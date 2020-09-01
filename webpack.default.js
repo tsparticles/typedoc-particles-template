@@ -45,6 +45,11 @@ const config = {
                     to: path.resolve(__dirname, 'bin/default/assets/js'),
                 },
                 {
+                    context: path.resolve(__dirname, 'src/default/helpers'),
+                    from: '*.js',
+                    to: path.resolve(__dirname, 'bin/default/helpers'),
+                },
+                {
                     context: path.resolve(__dirname, 'node_modules/tsparticles/dist'),
                     from: 'tsparticles.min.js',
                     to: path.resolve(__dirname, "bin/default/assets/js")

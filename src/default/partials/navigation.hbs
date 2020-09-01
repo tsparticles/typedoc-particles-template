@@ -1,16 +1,16 @@
 {{#if isVisible}}
     {{#if isLabel}}
         <li class="label {{cssClasses}}">
-            <span>{{{wbr title}}}</span>
+            <span>{{{wbr (removeQuotes title)}}}</span>
         </li>
     {{else}}
         {{#if isGlobals}}
             <li class="globals {{#if isInPath}}current{{/if}} {{cssClasses}}">
-                <a href="{{relativeURL url}}"><em>{{{wbr title}}}</em></a>
+                <a href="{{relativeURL url}}"><em>{{{wbr (removeQuotes title)}}}</em></a>
             </li>
         {{else}}
             <li class="{{#if isInPath}}current{{/if}} {{cssClasses}}">
-                <a href="{{relativeURL url}}">{{{wbr title}}}</a>
+                <a href="{{relativeURL url}}">{{{wbr (removeQuotes title)}}}</a>
                 {{#if isInPath}}
                     {{#if children}}
                         <ul>

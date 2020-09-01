@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{#ifCond model.name '==' project.name}}{{project.name}}{{else}}{{model.name}}
+    <title>{{#ifCond model.name '==' project.name}}{{project.name}}{{else}}{{removeQuotes model.name}}
         | {{project.name}}{{/ifCond}}</title>
     <meta name="description" content="Documentation for {{project.name}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,10 +18,7 @@
 
 <div class="container container-main">
     <div class="row">
-        <div class="col-8 col-content">
-            {{{contents}}}
-        </div>
-        <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+        <div class="col-3 col-menu menu-sticky-wrap menu-highlight">
             <nav class="tsd-navigation primary">
                 <ul>
                     {{#each navigation.children}}
@@ -29,7 +26,11 @@
                     {{/each}}
                 </ul>
             </nav>
-
+        </div>
+        <div class="col-6 col-content">
+            {{{contents}}}
+        </div>
+        <div class="col-3 col-menu menu-sticky-wrap menu-highlight">
             <nav class="tsd-navigation secondary menu-sticky">
                 <ul class="before-current">
                     {{#each toc.children}}

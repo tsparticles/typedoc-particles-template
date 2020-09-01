@@ -2,7 +2,8 @@
     <div class="tsd-page-toolbar">
         <div class="container">
             <div class="table-wrap">
-                <div class="table-cell" id="tsd-search" data-index="{{relativeURL "assets/js/search.json"}}" data-base="{{relativeURL "./"}}">
+                <div class="table-cell" id="tsd-search" data-index="{{relativeURL "assets/js/search.json"}}"
+                    data-base="{{relativeURL "./"}}">
                     <div class="field">
                         <label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
                         <input id="tsd-search-field" type="text" />
@@ -14,6 +15,11 @@
                     </ul>
 
                     <a href="{{relativeURL "index.html"}}" class="title">{{project.name}}</a>
+                    <div class="tsd-pages">
+                        {{#each settings.pages}}
+                        &emsp;<a href="{{url}}" class="title">{{label}}</a>
+                        {{/each}}
+                    </div>
                 </div>
 
                 <div class="table-cell" id="tsd-widgets">
@@ -33,13 +39,13 @@
                             <label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 
                             {{#unless settings.excludeExternals}}
-                                <input type="checkbox" id="tsd-filter-externals" checked />
-                                <label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+                            <input type="checkbox" id="tsd-filter-externals" checked />
+                            <label class="tsd-widget" for="tsd-filter-externals">Externals</label>
                             {{/unless}}
 
                             {{#unless settings.excludeNotExported}}
-                                <input type="checkbox" id="tsd-filter-only-exported" />
-                                <label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+                            <input type="checkbox" id="tsd-filter-only-exported" />
+                            <label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
                             {{/unless}}
                         </div>
                     </div>
@@ -56,16 +62,16 @@
             </ul>
             <h1>{{#compact}}
                 {{model.kindString}}&nbsp;
-                {{model.name}}
+                {{removeQuotes model.name}}
                 {{#if model.typeParameters}}
-                    &lt;
-                    {{#each model.typeParameters}}
-                        {{#if @index}},&nbsp;{{/if}}
-                        {{name}}
-                    {{/each}}
-                    &gt;
+                &lt;
+                {{#each model.typeParameters}}
+                {{#if @index}},&nbsp;{{/if}}
+                {{removeQuotes name}}
+                {{/each}}
+                &gt;
                 {{/if}}
-            {{/compact}}</h1>
+                {{/compact}}</h1>
         </div>
     </div>
 </header>

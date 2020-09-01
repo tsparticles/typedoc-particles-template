@@ -1,4 +1,21 @@
-html.default
+html.particles
+    .container-main
+        background-color: $COLOR_MAIN
+
+    .col-menu-left
+        padding-top: 20px
+
+    .col-content
+        padding-top: 20px
+
+    .tsd-generator
+        padding-top: 5px
+        padding-bottom: 5px
+
+    .tsd-pages
+        margin-left: 30px
+        display: inline-block
+
     +size-md
         .col-content
             width: 72%
@@ -27,7 +44,6 @@ html.default
             padding: 20px 20px 0 0
             max-width: 450px
             visibility: hidden
-            background-color: $COLOR_PANEL
             transform: translate(100%,0)
 
             > *:last-child
@@ -88,7 +104,7 @@ html.default
 .tsd-page-title
     padding: 70px 0 20px 0
     margin: 0 0 40px 0
-    background: $COLOR_PANEL
+    background: $COLOR_TITLE
     box-shadow: 0 0 5px rgba(#000, 0.35)
 
     h1
@@ -111,3 +127,9 @@ html.default
 
         &:after
             content: ' / '
+
+#tsparticles
+    position: fixed
+    width: 100vw
+    height: 100vh
+    z-index: -1

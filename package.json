@@ -7,12 +7,25 @@
     "bin",
     "LICENSE"
   ],
+  "keywords": [
+    "typescript",
+    "documentation",
+    "generator",
+    "typedocplugin",
+    "typedoc",
+    "tsparticles",
+    "particles.js",
+    "particles-js",
+    "particles"
+  ],
   "repository": "https://github.com/tsparticles/typedoc-particles-theme.git",
   "author": "Matteo Bruni <ar3s@icloud.com>",
   "license": "MIT",
   "scripts": {
     "webpack": "webpack -p",
-    "build": "npm run webpack && tsc -p tsconfig.helpers.json",
+    "build:helpers": "tsc -p tsconfig.helpers.json",
+    "build:plugin": "tsc -p tsconfig.plugin.json",
+    "build": "npm run webpack && npm run build:helpers && npm run build:plugin",
     "prepublishOnly": "npm run build"
   },
   "engines": {
@@ -20,7 +33,8 @@
   },
   "dependencies": {
     "lunr": "^2.3.9",
-    "tsparticles": "^1.17.10"
+    "tsparticles": "^1.17.10",
+    "typedoc": "~0.17.8"
   },
   "devDependencies": {
     "@types/lunr": "^2.3.3",

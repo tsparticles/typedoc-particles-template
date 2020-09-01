@@ -15,6 +15,7 @@
     "sourceMap": false,
     "strict": true,
     "alwaysStrict": false,
-    "noImplicitUseStrict": true
+    "noImplicitUseStrict": true,
+    "moduleResolution": "node"
   }
 }

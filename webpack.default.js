@@ -1,8 +1,8 @@
 const path = require('path');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-const {merge} = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const commonConfig = require('./webpack.common');
 
 const config = {
@@ -40,19 +40,9 @@ const config = {
                     to: path.resolve(__dirname, 'bin/default'),
                 },
                 {
-                    context: path.resolve(__dirname, 'src/default/assets/js'),
-                    from: '*.js',
-                    to: path.resolve(__dirname, 'bin/default/assets/js'),
-                },
-                {
                     context: path.resolve(__dirname, 'src/default/helpers'),
                     from: '*.js',
                     to: path.resolve(__dirname, 'bin/default/helpers'),
-                },
-                {
-                    context: path.resolve(__dirname, 'node_modules/tsparticles/dist'),
-                    from: 'tsparticles.min.js',
-                    to: path.resolve(__dirname, "bin/default/assets/js")
                 }
             ],
         }),

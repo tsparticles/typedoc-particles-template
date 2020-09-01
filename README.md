@@ -4,6 +4,8 @@
 
 This plugin contains a new theme for TypeDoc with [tsParticles](https://github.com/matteobruni/tsparticles) acting like an animated background.
 
+[![preview](https://media.giphy.com/media/giXXSQoWhbEJQ9ZG5Y/giphy.gif)](https://particles.js.org)
+
 Visit the [tsParticles reference](https://particles.js.org) to view this theme.
 
 Visit http://typedoc.org/ to learn more about TypeDoc.

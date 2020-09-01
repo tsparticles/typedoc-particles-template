@@ -38,11 +38,6 @@ const config = {
                     context: path.resolve(__dirname, 'src/particles'),
                     from: '**/*.hbs',
                     to: path.resolve(__dirname, 'bin/particles'),
-                },
-                {
-                    context: path.resolve(__dirname, 'src/particles/helpers'),
-                    from: '*.js',
-                    to: path.resolve(__dirname, 'bin/particles/helpers'),
                 }
             ],
         }),

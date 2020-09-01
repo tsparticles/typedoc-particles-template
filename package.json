@@ -12,7 +12,7 @@
   "license": "MIT",
   "scripts": {
     "webpack": "webpack -p",
-    "build": "npm run webpack",
+    "build": "npm run webpack && tsc -p tsconfig.helpers.json",
     "prepublishOnly": "npm run build"
   },
   "engines": {

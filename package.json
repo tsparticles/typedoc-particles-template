@@ -3,16 +3,14 @@
   "version": "1.0.0",
   "description": "TypeDoc theme with tsParticles as animated background",
   "main": "index.js",
-  "repository": "https://github.com/tsparticles/typedoc-particles-template.git",
+  "repository": "https://github.com/tsparticles/typedoc-particles-theme.git",
   "author": "Matteo Bruni <ar3s@icloud.com>",
   "license": "MIT",
   "scripts": {
     "build": "copyfiles -f ./node_modules/tsparticles/dist/tsparticles.min.js ./assets/js/"
   },
-  "dependencies": {
-    "tsparticles": "^1.17.10"
-  },
   "devDependencies": {
-    "copyfiles": "^2.3.0"
+    "copyfiles": "^2.3.0",
+    "tsparticles": "^1.17.10"
   }
 }

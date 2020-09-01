@@ -1,10 +1,10 @@
-import noise from "./noise";
+import { noise } from "./noise";
 import { tsParticles } from "tsparticles";
 import type { Container } from "tsparticles/dist/Core/Container";
 import type { RecursivePartial } from "tsparticles/dist/Types/RecursivePartial";
 import type { IOptions } from "tsparticles/dist/Options/Interfaces/IOptions";
 import type { IEmitterOptions } from "tsparticles/dist/Plugins/Emitters/EmittersPlugin";
-import { Particle } from "tsparticles/dist/Core/Particle";
+import type { Particle } from "tsparticles/dist/Core/Particle";
 
 export function initParticles() {
     let noiseZ: number;
@@ -1233,7 +1233,7 @@ export function initParticles() {
             emitterNoiseTrails,
             snow
         ])
-        .then(particles => {
+        .then((particles: Container | undefined) => {
             if (!particles) {
                 return;
             }

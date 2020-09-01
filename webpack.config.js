@@ -1,7 +1,5 @@
-const defaultThemeConfig = require('./webpack.default');
-//const minimalThemeConfig = require('./webpack.minimal');
+const particlesThemeConfig = require('./webpack.particles');
 
 module.exports = [
-    defaultThemeConfig,
-//    minimalThemeConfig,
+    particlesThemeConfig
 ];

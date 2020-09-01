@@ -7,7 +7,7 @@ const config = {
 
     context: path.resolve(__dirname, 'src'),
 
-    entry: './default/assets/js/src/bootstrap.ts',
+    entry: './particles/assets/js/src/bootstrap.ts',
 
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],

@@ -1,6 +1,6 @@
 {
   "include": [
-    "src/default/assets/js/src/**/*.ts"
+    "src/particles/assets/js/src/**/*.ts"
   ],
   "compilerOptions": {
     "target": "ES5",

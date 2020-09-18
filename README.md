@@ -21,12 +21,12 @@ After you install the module, you can use this theme in a build by running:
 ### Typedoc options
 This plugin adds additional options that can be placed in your `typedoc.json` file.
 
-#### Pages
+#### Links
 You may want to specify additional links to appear in your header that don't point to
 reference documentation but related documentation for your platform.
 
 ```json
-"pages": [{
+"links": [{
     "label": "Official Website",
     "url": "https://particles.matteobruni.it"
   }, {

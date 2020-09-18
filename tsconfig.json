@@ -1,6 +1,6 @@
 {
   "include": [
-    "src/particles/assets/js/src/**/*.ts"
+    "theme/assets/js/src/**/*.ts"
   ],
   "compilerOptions": {
     "target": "ES5",
@@ -16,6 +16,7 @@
     "strict": true,
     "alwaysStrict": false,
     "noImplicitUseStrict": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "experimentalDecorators": true
   }
 }

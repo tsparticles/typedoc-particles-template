@@ -5,9 +5,9 @@ const CopyPlugin = require('copy-webpack-plugin');
 const config = {
     mode: 'development',
 
-    context: path.resolve(__dirname, 'src'),
+    context: path.resolve(__dirname, 'theme'),
 
-    entry: './particles/assets/js/src/bootstrap.ts',
+    entry: './assets/js/src/bootstrap.ts',
 
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
@@ -45,19 +45,7 @@ const config = {
                 ],
             },
         ]
-    },
-
-    plugins: [
-        new CopyPlugin({
-            patterns: [
-                {
-                    context: path.resolve(__dirname, 'src'),
-                    from: 'plugin.js',
-                    to: path.resolve(__dirname, 'bin'),
-                },
-            ],
-        }),
-    ],
+    }
 }
 
 module.exports = config;

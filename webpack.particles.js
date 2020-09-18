@@ -10,7 +10,7 @@ const config = {
 
     output: {
         path: path.resolve(__dirname, 'bin'),
-        filename: 'particles/assets/js/main.js'
+        filename: './assets/js/main.js'
     },
 
     module: {
@@ -19,25 +19,29 @@ const config = {
                 test: /\.png$/,
                 loader: 'file-loader',
                 options: {
-                    outputPath: 'particles/assets/images',
+                    outputPath: './assets/images',
                     publicPath: '../images',
                     name: '[name].[ext]',
                 },
             },
+            {
+                test: /\.svg$/,
+                loader: 'svg-inline-loader'
+            }
         ]
     },
 
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'particles/assets/css/main.css',
+            filename: './assets/css/main.css',
         }),
         new CopyPlugin({
             patterns: [
                 {
-                    context: path.resolve(__dirname, 'src/particles'),
+                    context: path.resolve(__dirname, 'theme'),
                     from: '**/*.hbs',
-                    to: path.resolve(__dirname, 'bin/particles'),
+                    to: path.resolve(__dirname, 'bin'),
                 }
             ],
         }),

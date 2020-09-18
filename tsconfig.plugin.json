@@ -4,12 +4,11 @@
     "allowJs": true,
     "module": "umd",
     "target": "es2015",
-    "outDir": "./bin/particles/",
+    "outDir": "./bin/",
     "experimentalDecorators": true
   },
   "files": [
-    "./src/particles/helpers/remove-quotes.ts",
-    "./plugin.ts"
+    "./src/plugin.ts"
   ],
   "exclude": [
     "node_modules"

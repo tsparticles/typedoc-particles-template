@@ -104,7 +104,7 @@ export class SearchIndexBuilder implements SearchManager {
 			builder.pipeline.add(trimmer);
 
 			builder.ref("id");
-			builder.field("pagesPluginContent", {boost: 15});
+			builder.field("particlesPluginContent", {boost: 15});
 			builder.field("name", {boost: 10});
 			builder.field("parent");
 

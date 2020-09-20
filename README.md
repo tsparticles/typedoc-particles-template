@@ -19,18 +19,36 @@ After you install the module, you can use this theme in a build by running:
  `typedoc --theme ./node_modules/typedoc-particles-theme/bin/particles`
 
 ### Typedoc options
+
 This plugin adds additional options that can be placed in your `typedoc.json` file.
 
 #### Links
+
 You may want to specify additional links to appear in your header that don't point to
 reference documentation but related documentation for your platform.
 
-```json
-"links": [{
-    "label": "Official Website",
-    "url": "https://particles.matteobruni.it"
-  }, {
-    "label": "Repository",
-    "url": "https://github.com/matteobruni/tsparticles"
-  }]
+``` json
+"particles": {
+  "groups": [
+    {
+      "title": "Documentation",
+      "pages": [
+        {
+          "title": "My Page",
+          "source": "./markdown/index.md"
+        }
+      ]
+    }
+  ],
+  "enableSearch": false,
+  "links": [
+    {
+      "label": "Official Website",
+      "url": "https://particles.matteobruni.it"
+    }, {
+      "label": "Repository",
+      "url": "https://github.com/matteobruni/tsparticles"
+    }
+  ]
+}
 ```

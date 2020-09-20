@@ -10,7 +10,7 @@ import { PageDictionary, PageGroup } from "../pages/models/";
 import { getRelativeUrl } from "../utilities/path-utilities";
 import { InvalidPageLink } from "./invalid-page-link";
 
-export const INVALID_LINKS_HEADER_STRING = `[PagesPlugin]: Found invalid page link tag(s). They will not render as links in the generated documentation:`;
+export const INVALID_LINKS_HEADER_STRING = `[ParticlesPlugin]: Found invalid page link tag(s). They will not render as links in the generated documentation:`;
 
 /**
  * Regex object used to find `@page` and `@pagelink` tags in the parsed Markdown

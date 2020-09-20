@@ -76,8 +76,8 @@ export class NavigationItemFactory {
 		let items: PluginNavigationItem[] = [];
 
 		const thisIsParent = navigationItemPage.children.length > 0;
-		const thisIsActivePage = pageRenderModel.pagesPlugin && pageRenderModel.pagesPlugin.item === navigationItemPage;
-		const childIsActivePage = pageRenderModel.pagesPlugin && pageRenderModel.pagesPlugin.item && pageRenderModel.pagesPlugin.item.parent === navigationItemPage;
+		const thisIsActivePage = pageRenderModel.particlesPlugin && pageRenderModel.particlesPlugin.item === navigationItemPage;
+		const childIsActivePage = pageRenderModel.particlesPlugin && pageRenderModel.particlesPlugin.item && pageRenderModel.particlesPlugin.item.parent === navigationItemPage;
 
 		items.push(this.buildItem(navigationItemPage.title, navigationItemPage.url, navigationItemPage.url === urlBeingRendered, false, thisIsParent, childIsActivePage));
 

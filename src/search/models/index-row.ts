@@ -11,6 +11,6 @@ export interface IndexDataRow {
 	url: string;
 	classes: string;
 	parent?: string;
-	pagesPluginContent?: string;
-	pagesPluginParent?: string;
+	particlesPluginContent?: string;
+	particlesPluginParent?: string;
 }

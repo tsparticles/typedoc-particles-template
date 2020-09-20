@@ -39,7 +39,7 @@ export class NavigationRenderer {
 	 */
 	public addPluginNavigation(event: PageEvent): void {
 		// Determine if the page being rendered is a plugin item
-		const isPluginItem = (event.model as PluginPageUrlMappingModel).pagesPlugin.isPluginItem;
+		const isPluginItem = (event.model as PluginPageUrlMappingModel).particlesPlugin.isPluginItem;
 
 		this._ensureStandardNavigationHasTitle(event);
 		this._ensureStandardNavigationVisible(event, isPluginItem);
@@ -76,9 +76,9 @@ export class NavigationRenderer {
 
 	private _getGroupsForNavigation(currentPageModel: PluginPageUrlMappingModel, allGroups: PageGroup[]): PageGroup[] {
 		let nearestGroup: PageGroup;
-		const item = currentPageModel.pagesPlugin.item;
+		const item = currentPageModel.particlesPlugin.item;
 	
-		switch (currentPageModel.pagesPlugin.type) {
+		switch (currentPageModel.particlesPlugin.type) {
 			case ModelItemType.Group:
 				nearestGroup = item as PageGroup;
 				break;
@@ -149,11 +149,11 @@ export class NavigationRenderer {
 
 	private _buildBackButton(items: PluginNavigationItem[], event: PageEvent): void {
 		// No need for a back button if this is not a plugin page
-		if (!event.model.pagesPlugin.item) {
+		if (!event.model.particlesPlugin.item) {
 			return;
 		}
 		
-		const target = this._getBackButtonTarget((event.model.pagesPlugin as PluginPageUrlMappingModel).item);
+		const target = this._getBackButtonTarget((event.model.particlesPlugin as PluginPageUrlMappingModel).item);
 
 		if (!target) {
 			return;

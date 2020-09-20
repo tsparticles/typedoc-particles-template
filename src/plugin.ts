@@ -1,8 +1,4 @@
-import {
-    Component as CComponent,
-    ConverterComponent,
-} from "typedoc/dist/lib/converter/components"
-import { Component as RComponent, RendererComponent } from "typedoc/dist/lib/output/components";
+import { Component, RendererComponent } from "typedoc/dist/lib/output/components";
 import { Application } from "typedoc/dist/";
 import { Converter } from "typedoc/dist/lib/converter/converter";
 import { MarkdownEvent, PageEvent, RendererEvent } from "typedoc/dist/lib/output/events";
@@ -18,12 +14,8 @@ import { SearchManagerFactory } from "./search/search-manager-factory";
 import { ThemeManager } from "./theme/theme-manager";
 import { THEME_NAME, PLUGIN_NAME } from "./constants";
 
-@CComponent({ name: THEME_NAME })
-export class ExternalModuleMapPlugin extends ConverterComponent {
-}
-
-@RComponent({ name: PLUGIN_NAME })
-export class PagesPlugin extends RendererComponent {
+@Component({ name: PLUGIN_NAME })
+export class ParticlesPlugin extends RendererComponent {
 	private _optionManager: OptionManager;
 	private _themeManager: ThemeManager;
 	private _pageDictionaryFactory: PageDictionaryFactory;

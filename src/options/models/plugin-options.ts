@@ -4,6 +4,7 @@
  */
 
 import { PageGroupDefinition } from "./page-group-definition";
+import { LinkDefinition } from "./link-definition";
 
 /**
  * Plugin options
@@ -36,6 +37,8 @@ export interface PluginOptions {
 	 * This is where you define the groups your pages live in.
 	 */
 	groups?: PageGroupDefinition[];
+
+	links?: LinkDefinition[];
 
 	/**
 	 * Writes a list of any broken page links to the console

@@ -28,7 +28,7 @@ export class PageRenderer {
 
 	public addPluginDataToAllPages(event: RendererEvent): void {
 		for (const page of event.urls) {
-			page.model.pagesPlugin = this._getPluginModelMetadata(false);
+			page.model.particlesPlugin = this._getPluginModelMetadata(false);
 		}
 	}
 
@@ -128,18 +128,18 @@ export class PageRenderer {
 		model.name = item.title;
 	
 		if (item instanceof Page) {
-			model.pagesPlugin = this._getPluginModelMetadata(true, item, ModelItemType.Page);
+			model.particlesPlugin = this._getPluginModelMetadata(true, item, ModelItemType.Page);
 		} else if (item instanceof ChildPage) {
-			model.pagesPlugin = this._getPluginModelMetadata(true, item, ModelItemType.ChildPage);
+			model.particlesPlugin = this._getPluginModelMetadata(true, item, ModelItemType.ChildPage);
 		} else if (item instanceof PageGroup) {
 			const group = item as PageGroup;
-			model.pagesPlugin = this._getPluginModelMetadata(true, item, ModelItemType.Group);
+			model.particlesPlugin = this._getPluginModelMetadata(true, item, ModelItemType.Group);
 			if (group.pages.length > 0) {
 				model.url = group.pages[0].url;
 			}
 		} else if (item instanceof PageSection) {
 			const section = item as PageSection;
-			model.pagesPlugin = this._getPluginModelMetadata(true, item, ModelItemType.Section);
+			model.particlesPlugin = this._getPluginModelMetadata(true, item, ModelItemType.Section);
 			if (section.groups.length > 0) {
 				model.url = section.groups[0].pages[0].url;
 			}
@@ -159,6 +159,7 @@ export class PageRenderer {
 			item,
 			options: {
 				replaceGlobalsPage: this._options.replaceGlobalsPage,
+				links: this._options.links
 			},
 			type,
 		};

@@ -1,3 +1,4 @@
+import { LinkDefinition } from "../options/models/link-definition";
 /**
  * @packageDocumentation
  * @module Rendering
@@ -19,6 +20,7 @@ export interface UrlMappingModelPluginMetadata {
 	item?: BaseItem;
 	options: {
 		replaceGlobalsPage: boolean;
+		links?: LinkDefinition[]
 	};
 	type?: ModelItemType;
 }
@@ -26,5 +28,5 @@ export interface UrlMappingModelPluginMetadata {
 // TODO: Document this
 export interface PluginPageUrlMappingModel {
 	[key: string]: any;
-	pagesPlugin: UrlMappingModelPluginMetadata;
+	particlesPlugin: UrlMappingModelPluginMetadata;
 }

@@ -28,7 +28,7 @@ export class IndexDataManager {
 		for (const row of indexData.rows) {
 			// Add search result parent title property
 			if (row.parent) {
-				row.pagesPluginParent = row.parent + ".";
+				row.particlesPluginParent = row.parent + ".";
 			}
 		}
 	}
@@ -60,9 +60,9 @@ export class IndexDataManager {
 			name: page.title,
 			url: page.url,
 			classes: "tsd-kind-page",
-			pagesPluginContent: page.contents,
+			particlesPluginContent: page.contents,
 			parent: undefined,
-			pagesPluginParent: page.parent.title + " / ",
+			particlesPluginParent: page.parent.title + " / ",
 		};
 		index.rows.push(row);
 	

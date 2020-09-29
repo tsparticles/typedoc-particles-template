@@ -12,7 +12,7 @@ import { PageRenderer } from "./rendering/page-renderer";
 import { SearchManager } from "./search/search-manager";
 import { SearchManagerFactory } from "./search/search-manager-factory";
 import { ThemeManager } from "./theme/theme-manager";
-import { THEME_NAME, PLUGIN_NAME } from "./constants";
+import { PLUGIN_NAME } from "./constants";
 
 @Component({ name: PLUGIN_NAME })
 export class ParticlesPlugin extends RendererComponent {

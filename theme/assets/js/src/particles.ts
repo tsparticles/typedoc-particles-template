@@ -434,82 +434,82 @@ export function initParticles() {
                 },
                 image: [
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/apple.png",
+                        src: "https://particles.js.org/images/fruits/apple.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/avocado.png",
+                        src: "https://particles.js.org/images/fruits/avocado.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/banana.png",
+                        src: "https://particles.js.org/images/fruits/banana.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/berries.png",
+                        src: "https://particles.js.org/images/fruits/berries.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/cherry.png",
+                        src: "https://particles.js.org/images/fruits/cherry.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/grapes.png",
+                        src: "https://particles.js.org/images/fruits/grapes.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/lemon.png",
+                        src: "https://particles.js.org/images/fruits/lemon.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/orange.png",
+                        src: "https://particles.js.org/images/fruits/orange.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/peach.png",
+                        src: "https://particles.js.org/images/fruits/peach.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/pear.png",
+                        src: "https://particles.js.org/images/fruits/pear.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/pepper.png",
+                        src: "https://particles.js.org/images/fruits/pepper.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/plum.png",
+                        src: "https://particles.js.org/images/fruits/plum.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/star.png",
+                        src: "https://particles.js.org/images/fruits/star.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/strawberry.png",
+                        src: "https://particles.js.org/images/fruits/strawberry.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/watermelon.png",
+                        src: "https://particles.js.org/images/fruits/watermelon.png",
                         width: 32,
                         height: 32
                     },
                     {
-                        src: "https://particles.matteobruni.it/images/fruits/watermelon_slice.png",
+                        src: "https://particles.js.org/images/fruits/watermelon_slice.png",
                         width: 32,
                         height: 32
                     }

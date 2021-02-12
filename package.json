@@ -35,7 +35,7 @@
   "dependencies": {
     "lunr": "^2.3.9",
     "tsparticles": "^1.18.11",
-    "typedoc": "~0.19.2"
+    "typedoc": "~0.20.24"
   },
   "devDependencies": {
     "@types/lunr": "^2.3.3",
